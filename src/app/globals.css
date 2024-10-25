@@ -1,0 +1,21 @@
+header {
+background-color: rgb(255, 236, 151);
+  height: 400px;
+  background-size:100% ;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+header button {
+  
+  bottom: 10px;
+}
+
+.bar {
+  border: 1px solid;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+ 
