@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^9.0.1",
-    "@next/third-parties": "^14.2.13",
+    "@next/third-parties": "^15.0.3",
     "axios": "^1.7.8",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.4",
@@ -22,5 +22,8 @@
     "react-dom": "^18.3.1",
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5"
+  },
+  "resolutions": {
+    "next": "^15.0.3"
   }
 }

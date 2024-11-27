@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta name="google-site-verification" content="mFESL3SA5vVBU7zoYemzaPAw5NuqtNcvkAa2aSQ1QEA" />
       <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16714335017"></script>
         <script
