@@ -43,6 +43,19 @@
     width: 100%;
 }
 
+.imgfb {
+    width: 686px;
+    height: 380px;
+}
+
+
+
+
+
+
+
+
+
 
 
 @keyframes bounce {
@@ -79,5 +92,11 @@
         width: 50%;
        display: block;
     }
+
+    .imgfb {
+        width: 100%;
+       
+    }
+    
     
 }

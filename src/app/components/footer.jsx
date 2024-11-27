@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 export default function footer() {
   return (
     <>
@@ -14,14 +14,18 @@ export default function footer() {
                         </p>
                        
                     </div>
+
+
                     <div className="col-md-6 col-lg-3">
                         <h5 className="text-white mb-4">Popular Link</h5>
-                        <a className="btn btn-link" href="">About Us</a>
-                        <a className="btn btn-link" href="">Contact Us</a>
-                        <a className="btn btn-link" href="">Privacy Policy</a>
-                        <a className="btn btn-link" href="">Terms & Condition</a>
-                        <a className="btn btn-link" href="">Career</a>
+                        <a className="foo btn-link" href="">About Us</a> <br />
+                        <a className="foo btn-link" href="">Contact Us</a><br />
+                        <a className="foo btn-link" href="">Privacy Policy</a><br />
+                        <a className="foo btn-link" href="">Terms & Condition</a><br />
+                        <a className="foo btn-link" href="">Career</a>
                     </div>
+
+
                     <div className="col-md-6 col-lg-3">
                         <h5 className="text-white mb-4">Project Gallery</h5>
                         <div className="row g-2">

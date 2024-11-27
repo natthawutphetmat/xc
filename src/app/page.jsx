@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './components/footer'
-import Header from './components/headers'
+
  
 import Secsion from './components/secsions'
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -61,10 +61,10 @@ export default function Homepage() {
   
   
   </div>
-     <Header/>
+ 
      <Secsion/>
    
-     <Footer/>
+   
    
     </>
   )

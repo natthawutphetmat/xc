@@ -1,53 +1,54 @@
+'use client'
+ 
+import React from 'react'
+ 
+import Link from 'next/link'
  
 
-import React from 'react'
+const navBar = [
+    { href: '/', name: 'Home' },
+    { href: '/Postpages', name: 'Postpages' },
+    { href: '/google', name: 'Google' },
+    { href: '/facebook', name: 'Facebook' },
+    { href: '/course', name: 'Course' },
+    { href: '/toolfree', name: 'ToolFree' },
+ 
+]
+
 
 export default function Headers() {
+ 
+
+
   return (
     <>
+ <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className="container-xl">
+          <a className="navbar-brand" href="/"> 
+            <img src="/logo.png" width={50} alt="logo" />
+            <span>AdsDev</span>
+          </a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {navBar.map((link) => (
+                <li key={link.href} className="nav-item mx-2">
+                  <Link href={link.href} className={`nav-link ${navBar === link.href ? 'active' : ''}`}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+     
+            
+          </div>
+        </div>
+      </nav>
 
 
-<nav className="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Ninth navbar example">
-    <div className="container-xl">
-      <a className="navbar-brand" href="/"> 
-      <img src="/logo.png" width={50}  alt="logo" />
-      </a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarsExample07XL">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#about">About</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#facebook">facebook</a>
-          </li>
-          <li className="nav-item dropdown">
-          <a className="nav-link active" aria-current="page" href="#Google">Google</a>
-             
-          </li>
-          <li className="nav-item dropdown">
-          <a className="nav-link active" aria-current="page" href="#contact">contact</a>
-             
-          </li>
-          <li className="nav-item dropdown">
-          <a className="nav-link active" aria-current="page" href="/dowloads">Dowloads</a>
-             
-          </li>
-        </ul>
-        <form role="search">
-        
-        <a href="https://lin.ee/RAtXbEtM"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"/></a>
-
-        </form>
-      </div>
-    </div>
-  </nav>
 
   <header>
         <main className ="container">

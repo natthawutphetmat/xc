@@ -1,21 +1,24 @@
  
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
-
+import Header from './components/headers'
+import Footer from './components/footer'
 import "./style.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
+import "./nav.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
+import "./form.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
 
 import "./globals.css";  
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// นำเข้า localFont จากโมดูลที่เกี่ยวข้อง (ถ้ามี)
+ 
 
 const geistSans = {
-  variable: "--font-geist-sans", // ใช้ตัวแปร CSS สำหรับ Geist Sans
+  variable: "--font-geist-sans",  
 };
 
 const geistMono = {
-  variable: "--font-geist-mono", // ใช้ตัวแปร CSS สำหรับ Geist Mono
+  variable: "--font-geist-mono",  
 };
 
 
@@ -38,6 +41,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <Header/>
+    
         {children}
  
          
@@ -49,6 +54,7 @@ export default function RootLayout({ children }) {
 
         <GoogleAnalytics gaId="G-X3BDJ31PJ0" />
 
+        <Footer/>
       </body>
     </html>
   );
