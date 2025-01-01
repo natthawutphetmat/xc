@@ -1,118 +1,102 @@
-"use client"
+"use client";
 import Image from "next/image";
-import React, { useState, useEffect } from 'react';
+import Head from "next/head"; // Import Head from Next.js
+import React, { useState, useEffect } from "react";
 
-const ToolPageFacebook = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(5);
-    const [time, setTime] = useState('');
-   
-    const openModal = () => {
-        setModalIsOpen(true);
-        setTimeLeft(5);
-    };
+const Toolfree = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(30);
 
-    const closeModal = () => {
-        setModalIsOpen(false);
-    };
+  const openModal = () => {
+    setModalIsOpen(true);
+    setTimeLeft(30);
+  };
 
-    useEffect(() => {
-        if (!modalIsOpen) return;
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
-        const timer = setInterval(() => {
-            setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
-        }, 1000);
+  useEffect(() => {
+    if (!modalIsOpen) return;
 
-        return () => clearInterval(timer);
-    }, [modalIsOpen]);
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+    }, 1000);
 
-    useEffect(() => {
-        if (timeLeft === 0) {
+    return () => clearInterval(timer);
+  }, [modalIsOpen]);
 
-         window.location.href='https://dowloads.myads.dev/facebook.zip';
-          closeModal();
+  useEffect(() => {
+    if (timeLeft === 0) {
+      window.location.href = "https://dowload.myads.dev/facebook/facebook.zip";
+      closeModal();
+    }
+  }, [timeLeft]);
 
-        }
-    }, [timeLeft]);
+  return (
+    <>
+      {/* Place <Head> component at the top level */}
+      <Head>
+        <title>ดาวน์โหลดเครื่องมือทำการตลาดฟรี Dowloads Facebook</title>
+        <meta
+          name="description"
+          content="ดาวน์โหลดเครื่องมือทำการตลาดฟรี Dowloads Landing page Facebook"
+        />
+        <meta property="og:image" content="https://www.myads.dev/logo.png" />
+        <meta
+          name="keywords"
+          content="ยิงads,facebook,สายเทา,โฆษณา,ยิงads facebook สายเทา,รับยิงads,รับยิงแอด สายเทา,facebook ads,google ads,google,รับยิงแอด,ads,รับทำโฆษณา,รับโฆษณา,Facebook,การตลาด,โฆษณาออนไลน์,เว็บไซต์,ตลาดเป้าหมาย,โฆษณาบนโซเชียลมีเดีย,Google Ads,การโฆษณาบน Facebook,การโฆษณาออนไลน์บนสื่อต่าง ๆ,การตลาดออนไลน์,การโปรโมท,โฆษณา Facebook,การโฆษณา Google,การโฆษณาสินค้า,การโฆษณาโปรโมชั่น,วิธีการโฆษณา,ความสำเร็จในการตลาด,บริการโฆษณา,การตลาดออนไลน์บน Facebook,การโฆษณาบนเว็บ,การวางแผนโฆษณา,รับจ้างโฆษณา"
+        />
+      </Head>
 
-if(time) {
- 
-}
+      <div className="text-center">
+        <h3>Dowloads Landing page Facebook</h3>
+        <Image
+          src="/img/fbd.webp"
+          width={650}
+          height={360}
+          alt="ทำการตลาดฟรี"
+          className="imgfb"
+        />
+      </div>
 
+      <div className="text-center">
+        <button type="button" className="mt-3" onClick={openModal}>
+          <Image
+            src="/img/dl.webp"
+            width={100}
+            height={100}
+            alt="ทำการตลาดฟรี"
+          />
+        </button>
+      </div>
 
-    return (
-        <>
-
-<head>
-          <title>ดาวน์โหลดเครื่องมือทำการตลาดฟรี Dowloads Facebook</title>
-          <meta name="description" content="ดาวน์โหลดเครื่องมือทำการตลาดฟรี Dowloads Landing page Facebook" />
-          <meta property="og:image" content="https://www.myads.dev/logo.png" />
-          <meta name="keywords" content="ยิงads,facebook,สายเทา,โฆษณา,ยิงads facebook สายเทา,รับยิงads,รับยิงแอด สายเทา,facebook ads,google ads,google,รับยิงแอด,ads,รับทำโฆษณา,รับโฆษณา,Facebook,การตลาด,โฆษณาออนไลน์,เว็บไซต์,ตลาดเป้าหมาย,โฆษณาบนโซเชียลมีเดีย,Google Ads,การโฆษณาบน Facebook,การโฆษณาออนไลน์บนสื่อต่าง ๆ,การตลาดออนไลน์,การโปรโมท,โฆษณา Facebook,การโฆษณา Google,การโฆษณาสินค้า,การโฆษณาโปรโมชั่น,วิธีการโฆษณา,ความสำเร็จในการตลาด,บริการโฆษณา,การตลาดออนไลน์บน Facebook,การโฆษณาบนเว็บ,การวางแผนโฆษณา,รับจ้างโฆษณา ยิงads,facebook,สายเทา,โฆษณา,ยิงads facebook สายเทา,รับยิงads,รับยิงแอด สายเทา,facebook ads,google ads,google,ads,สอนยิงแอด,สอนยิงแอด Conversion,สอนยิงแอดสายเทา,ยิงแอดสายเทา,ยิงโฆษณาสายเทา,รับทำ seo สายเทา,รับทำ seo สายดำ,แอดสายเทา,รับยิงแอดสายเทา,กูเกิ้ลแอดสายเทา,รับทํา google ads,สายเทา seo สายเทา,ตลาดสีเทา,แอดสีเทา,adsสีเทา,กราฟฟิกสายเทา,ยิงแอดเทา,รับยิงแอดfacebookสายเทา,รูปยิงแอดสายเทา,รับจ้างสายเทา,รับโฆษณาสายเทา" />
-
-        </head>
-
-        <div className="text-center">
-          <h3>Dowloads Landing page Facebook</h3>
-
-       
- 
-
-          <img src="/img/fbd.webp"  width={650} height={360}  alt="ทำการตลาดฟรี" className="imgfb"  />
+      {modalIsOpen && (
+        <div
+          className="modal fade show"
+          style={{ display: "block", backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        >
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h1 className="modal-title fs-5">
+                  หลังจาก 30 วินาทีจะดาวน์โหลดอัตโนมัติ
+                </h1>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModal}
+                ></button>
+              </div>
+              <div className="modal-body text-center">
+                <h2>กรุณารอ {timeLeft} วินาที</h2>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="text-center">
-        
-        
-  
-  
-            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="mt-3"  onClick={openModal} >
-            <img src="/img/dl.webp" width={100} height={100}  alt="ทำการตลาดฟรี" />
-            </button>
-            </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="modal fade" id="staticBackdrop"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-
-<div className="modal-dialog modal-dialog-centered">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalToggleLabel">หลังจาก 30 วินาทีจะดาวน์โหลดอัตโนมัติ</h1>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={closeModal}></button>
-      </div>
-      <div class="modal-body">
-
-
-        {modalIsOpen && (
-                                <>  
-                                    <div className="text-center"><div className='h2'>กรุณารอ {timeLeft} วินาที</div>
-                                    
-                                    
-                                    </div> 
-                                </>
-                            )}
-
-
-      </div>
-      <div className="modal-footer">
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        </>
-    );
+      )}
+    </>
+  );
 };
 
-export default ToolPageFacebook;
+export default Toolfree;
