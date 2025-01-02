@@ -46,3 +46,182 @@ header button {
   }
   
 }
+
+.cartpage {
+  border: 1px solid #ddd;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #888888;
+  
+  align-items: center;
+   width: 350px;
+
+
+}
+
+
+
+/* container ของหน้าสินค้า */
+.cartpage {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartpage h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.cartpage img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.textname h3 {
+  font-size: 1.1rem;
+  color: #264653;
+  margin-bottom: 10px;
+}
+
+.cartpage p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cartpage .product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e76f51;
+  margin-bottom: 20px;
+}
+
+.cartpage button {
+  background-color: #2a9d8f;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.cartpage button:hover {
+  background-color: #264653;
+}
+
+.cartpage .quantity-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cartpage .quantity-buttons button {
+  background-color: #f4a261;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartpage .quantity-buttons button:hover {
+  background-color: #e76f51;
+}
+
+.cartpage .quantity-buttons span {
+  font-size: 1.5rem;
+  margin: 0 15px;
+  color: #264653;
+}
+
+.homebox {
+  border: 1px solid #ddd;
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #888888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: auto; /* ให้ความสูงปรับตามเนื้อหา */
+  overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวแกน Y */
+  justify-content: space-between; /* ช่องว่างระหว่าง item */
+}
+
+.boximg {
+  width: 100px; /* กำหนดความกว้างของรูปภาพ */
+  flex-shrink: 0; /* ไม่ให้รูปภาพย่อ */
+  margin-right: 15px;
+}
+
+.boximg img {
+  width: 100%; /* รูปภาพปรับขนาดให้เต็มกล่อง */
+  height: auto; /* รักษาสัดส่วนของรูปภาพ */
+  border-radius: 10px; /* เพิ่มมุมโค้งถ้าต้องการ */
+}
+
+.boxx {
+  flex: 1; /* ตัวหนังสือใช้พื้นที่ว่างที่เหลือ */
+  margin-right: 50px; /* เว้นระยะกับปุ่ม */
+  text-align: left; /* จัดข้อความไว้ทางซ้าย */
+  overflow: hidden; /* ซ่อนข้อความที่เกิน */
+  white-space: nowrap; /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+  text-overflow: ellipsis; /* แสดง ... เมื่อข้อความยาวเกิน */
+}
+
+.title {
+  font-size: 1.2rem;
+
+  margin: 0;
+}
+
+.name {
+  font-size: 1rem;
+  margin: 0;
+  color: #555; /* เพิ่มสีเพื่อความสวยงาม */
+}
+
+.btns {
+  flex-shrink: 0; /* ไม่ให้ปุ่มย่อ */
+}
+
+.btn {
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.home {
+  color: #ffffff; 
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.singup {
+  max-width: 450px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}

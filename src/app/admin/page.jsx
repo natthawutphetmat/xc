@@ -17,7 +17,7 @@ const App = () => {
       .then((response) => response.json())
       .then((data) => setPosts(data))
        
-  }, []);
+  }, [0]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +51,9 @@ const App = () => {
   return (
     <div>
     <form onSubmit={handleSubmit} className="upload-form">
-<h1>Upload Form</h1>
+ <div className="text-center">
+  <a href="/admin/fb">add</a>
+ </div>
 <div className="form-group">
    <label htmlFor="title">Title</label>
    <input

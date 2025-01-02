@@ -12,6 +12,7 @@ const navBar = [
     { href: '/facebook', name: 'Facebook' },
     { href: '/course', name: 'Course' },
     { href: '/toolfree', name: 'ToolFree' },
+    { href: '/accfb', name: 'บัญชีโฆณา-FB' },
  
 ]
 
