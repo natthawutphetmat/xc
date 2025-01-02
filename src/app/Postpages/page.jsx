@@ -13,21 +13,21 @@ export default function Page() {
       try {
         let response = await fetch('https://api-post-get.myads.dev/get');
         let data = await response.json();
-        setPosts(data); // Update the state with fetched posts
+        setPosts(data);  
       } catch (error) {
         console.error("Error fetching posts:", error);
       }
     };
 
     fetchPosts();
-  }, []); // Run effect once on mount
+  }, []);  
 
   const urlimg = 'https://api-post.myads.dev/public';
 
   return (
     <>
-      {/* ใช้ Head จาก next/head */}
-      <head>
+    
+      <>
         <title>PostPage | รับจ้างยิงแอดทำโฆษณาออนไลน์ </title>
         <meta name="title" content="PostPage | รับจ้างยิงแอดทำโฆษณาออนไลน์ " />
         <meta
@@ -64,7 +64,10 @@ export default function Page() {
         <meta property="twitter:image" content="https://www.myads.dev/logo.png" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://www.myads.dev" />
-      </head>
+      </>
+
+
+
 
       <div className="container mx-auto">
         {posts.map((post) => (

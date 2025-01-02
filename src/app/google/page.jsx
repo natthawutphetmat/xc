@@ -4,8 +4,8 @@ import React from "react";
 export default function Google() {
   return (
     <>
-      {/* Use Next.js Head component */}
-      <head>
+ 
+      <>
         <title>GoogleAds | รับทำโฆษณา Google Ads สายเทา</title>
         <meta
           name="title"
@@ -48,9 +48,9 @@ export default function Google() {
         />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://www.myads.dev" />
-      </head>
+      </>
 
-      {/* Main Content */}
+  
       <div className="container">
         <div className="text-center">
           <h1>รับทำโฆษณา Google Ads สายเทา</h1>

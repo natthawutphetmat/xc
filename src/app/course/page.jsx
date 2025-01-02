@@ -6,7 +6,7 @@ import Head from 'next/head'
 export default function Courses() {
   return (
     <>
-      <head>
+      <>
         <title>บริการคอร์สเรียนทำการตลาดออนไลน์</title>
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
         <meta name="description" content="บริการคอร์สเรียนทำการตลาดออนไลน์: โฆษณา Facebook และ Google สายเทา" />
@@ -23,7 +23,7 @@ export default function Courses() {
         <meta property="twitter:image" content="https://www.myads.dev/img/course.webp" />
         <meta property="twitter:url" content="https://www.myads.dev/" />
         <link rel="canonical" href="https://www.myads.dev/" />
-      </head>
+      </>
 
       <div className='container'>
         <div className="cassimg text-center">

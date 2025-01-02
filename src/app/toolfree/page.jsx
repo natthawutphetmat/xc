@@ -35,8 +35,8 @@ const Toolfree = () => {
 
   return (
     <>
-      {/* Place <Head> component at the top level */}
-      <Head>
+ 
+      <>
         <title>ดาวน์โหลดเครื่องมือทำการตลาดฟรี Dowloads Facebook</title>
         <meta
           name="description"
@@ -47,7 +47,7 @@ const Toolfree = () => {
           name="keywords"
           content="ยิงads,facebook,สายเทา,โฆษณา,ยิงads facebook สายเทา,รับยิงads,รับยิงแอด สายเทา,facebook ads,google ads,google,รับยิงแอด,ads,รับทำโฆษณา,รับโฆษณา,Facebook,การตลาด,โฆษณาออนไลน์,เว็บไซต์,ตลาดเป้าหมาย,โฆษณาบนโซเชียลมีเดีย,Google Ads,การโฆษณาบน Facebook,การโฆษณาออนไลน์บนสื่อต่าง ๆ,การตลาดออนไลน์,การโปรโมท,โฆษณา Facebook,การโฆษณา Google,การโฆษณาสินค้า,การโฆษณาโปรโมชั่น,วิธีการโฆษณา,ความสำเร็จในการตลาด,บริการโฆษณา,การตลาดออนไลน์บน Facebook,การโฆษณาบนเว็บ,การวางแผนโฆษณา,รับจ้างโฆษณา"
         />
-      </Head>
+      </>
 
       <div className="text-center">
         <h3>Dowloads Landing page Facebook</h3>

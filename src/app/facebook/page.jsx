@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function page() {
   return (
     <>
-   <head>
+   <>
  
  <title>โฆษณาFacebook_Ads|รับทำโฆษณาGoogle_Adsสายเทา </title>
  <meta name="title" content="โฆษณาFacebook_Ads|รับทำโฆษณาGoogle_Adsสายเทา " />
@@ -31,7 +31,7 @@ export default function page() {
  
  
   
-     </head>
+     </>
 
 <div className="container">
  <div className="text-center">
