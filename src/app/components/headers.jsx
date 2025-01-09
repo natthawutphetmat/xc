@@ -3,7 +3,7 @@
 import React from 'react'
  
 import Link from 'next/link'
- 
+import Profile from '../profile/page';
 
 const navBar = [
     { href: '/', name: 'Home' },
@@ -13,6 +13,7 @@ const navBar = [
     { href: '/course', name: 'Course' },
     { href: '/toolfree', name: 'ToolFree' },
     { href: '/accfb', name: 'บัญชีโฆณา-FB' },
+    { href: '/login', name: 'login' },
  
 ]
 
@@ -23,7 +24,7 @@ export default function Headers() {
 
   return (
     <>
- <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+ <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
         <div className="container-xl">
           <a className="navbar-brand" href="/"> 
             <img src="/logo.png" width={50} alt="logo" />
@@ -42,11 +43,12 @@ export default function Headers() {
                 </li>
               ))}
             </ul>
-
-     
+            </div>
+            </div>
+          <Profile/>
             
-          </div>
-        </div>
+       
+    
       </nav>
 
 

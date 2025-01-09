@@ -225,3 +225,25 @@ header button {
   padding: 20px;
   text-align: center;
 }
+
+
+a.boxuser img {
+  transition: transform 0.3s ease;
+}
+
+a.boxuser img:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu a {
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+a.boxuser {
+  position: fixed;
+  left: 500px;
+}
